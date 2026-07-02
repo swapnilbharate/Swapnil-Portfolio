@@ -75,7 +75,7 @@ Passionate Full Stack Developer with hands-on experience in building modern web 
 
 🐙 GitHub: https://github.com/swapnilbharate
 
-💼 LinkedIn: https://www.linkedin.com/in/swapnil-bharate
+💼 LinkedIn: https://www.linkedin.com/in/swapnilbharate96
 
 ## ⭐ Support
 
