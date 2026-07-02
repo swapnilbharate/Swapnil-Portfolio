@@ -1,4 +1,4 @@
-import profile from "../assets/images/photo.png";
+import profile from "../assets/images/Photo.png";
 import { useEffect, useRef } from "react";
 
 function Home() {
