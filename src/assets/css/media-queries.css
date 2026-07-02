@@ -17,14 +17,12 @@
     }
 
     .navbar {
-
         padding: 1rem 1rem;
         font-size: 1.9rem;
     }
 
-    .navbar ul {
-        display: none;
-        gap: 1rem;
+    .hamburger {
+        display: flex;
     }
 
     /* HERO: stack and center content; hide hero profile image */
@@ -39,6 +37,14 @@
         grid-template-columns: 1fr;
         justify-items: center;
         gap: 1.6rem;
+    }
+
+    .home-img {
+        justify-content: center;
+        width: 100%;
+        padding: 1.5rem;
+        margin-top: 0;
+        padding-top: 1.5rem;
     }
 
     .home-content {
@@ -56,9 +62,11 @@
         margin-bottom: 4px;
     }
 
-    /* Hide the hero profile image on very small screens (user requested) */
+    /* Show profile image on small screens — reduced size */
     .home .profile-pic {
-        display: none;
+        display: block;
+        width: min(100%, 160px);
+        border-width: 4px;
     }
 
     .social-links{
@@ -125,12 +133,31 @@
         grid-template-columns: 1fr;
         padding: 0 1rem;
         row-gap: 3rem;
+    }
 
+    .project-card {
+        border-radius: 1.4rem;
+    }
+
+    .project-image {
+        border-radius: 1.4rem 1.4rem 0 0;
+        overflow: hidden;
     }
 
     .project-image img {
-        height: 160px;
+        height: 200px;
         object-fit: cover;
+        border-radius: 0;
+    }
+
+    /* Certificates 2 per row on small phones */
+    .cert-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .cert-card {
+        padding: 1.8rem 1.4rem;
     }
 
     /* CONTACT: vertical stack */
@@ -186,9 +213,8 @@
         font-size: 2rem;
     }
 
-    .navbar ul {
-        display: none;
-        gap: 1.4rem;
+    .hamburger {
+        display: flex;
     }
 
     .home {
@@ -197,12 +223,45 @@
 
     .home-inner {
         grid-template-columns: 1fr;
+        justify-items: center;
         gap: 1.8rem;
     }
 
+    .home-img {
+        justify-content: center;
+        width: 100%;
+        padding: 1.5rem;
+        margin-top: 0;
+        padding-top: 1.5rem;
+    }
+
     .home-content {
-        text-align: left;
+        text-align: center;
         padding: 0 1rem;
+    }
+
+    .home-content h1 {
+        font-size: 4.5rem;
+        text-align: center;
+    }
+
+    .home-content h3 {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero-eyebrow {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-actions {
+        justify-content: center;
     }
 
     .home-content h1 {
@@ -210,7 +269,9 @@
     }
 
     .home .profile-pic {
-        display: none;
+        display: block;
+        width: min(100%, 200px);
+        border-width: 4px;
     }
 
     .home-content h3:nth-of-type(2) {
@@ -278,10 +339,11 @@
         object-fit: cover;
     }
 
-    /* Cert */
+    /* Cert - 2 per row */
     .cert-grid {
-    grid-template-columns: 1fr;
-     }
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.4rem;
+    }
 
     /* contact section */
     .contact {

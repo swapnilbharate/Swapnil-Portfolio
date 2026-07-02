@@ -120,6 +120,40 @@ textarea {
   color: var(--accent);
 }
 
+/* Hamburger button — hidden on desktop */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.6rem;
+  z-index: 100;
+}
+
+.hamburger span {
+  display: block;
+  width: 2.6rem;
+  height: 2.5px;
+  background: var(--text);
+  border-radius: 4px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: translateY(7.5px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-7.5px) rotate(-45deg);
+}
+
 .home {
   min-height: calc(100vh - var(--navbar-height));
   display: flex;
@@ -789,6 +823,11 @@ textarea {
 
   .home-img {
     order: -1;
+    justify-content: center;
+    margin-bottom: 2rem;
+    padding-top: 0;
+    margin-top: 0;
+    padding: 1.5rem;
   }
 
   .about-card {
@@ -805,14 +844,54 @@ textarea {
     font-size: 56.25%;
   }
 
+  /* Hamburger visible on mobile */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Nav dropdown menu */
+  .nav-list {
+    display: none;
+    position: absolute;
+    top: var(--navbar-height);
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    background: rgba(12, 6, 24, 0.97);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(139, 92, 246, 0.15);
+    padding: 1.5rem 0;
+    z-index: 98;
+  }
+
+  .nav-list.open {
+    display: flex;
+  }
+
+  .nav-list li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-list a {
+    display: block;
+    padding: 1.2rem 2rem;
+    font-size: 1.6rem;
+    transition: background 0.25s ease, color 0.25s ease;
+  }
+
+  .nav-list a:hover {
+    background: rgba(139, 92, 246, 0.1);
+    color: var(--accent);
+  }
+
   .navbar .container {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 1rem 0;
-  }
-
-  .nav-list {
-    display: none;
+    position: relative;
   }
 
   .home {
@@ -828,6 +907,12 @@ textarea {
     justify-content: center;
   }
 
+  /* Show profile image on mobile — smaller */
+  .profile-pic {
+    width: min(100%, 220px);
+    border-width: 4px;
+  }
+
   .contact-text,
   .contact-form {
     padding: 2.4rem;
@@ -837,8 +922,31 @@ textarea {
     padding: 2.4rem;
   }
 
+  /* Fix project image corners — no clipping */
+  .project-card {
+    border-radius: 1.4rem;
+    overflow: visible;
+  }
+
+  .project-image {
+    border-radius: 1.4rem 1.4rem 0 0;
+    overflow: hidden;
+  }
+
   .project-image img {
     height: 220px;
+    border-radius: 0;
+  }
+
+  /* Projects single column on mobile */
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Certificates 2 per row */
+  .cert-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.4rem;
   }
 }
 
@@ -866,6 +974,11 @@ textarea {
     font-size: 1.45rem;
   }
 
+  /* Profile image even smaller on small phones */
+  .profile-pic {
+    width: min(100%, 180px);
+  }
+
   .btn-box,
   .btn {
     font-size: 1.35rem;
@@ -887,5 +1000,15 @@ textarea {
 
   .footer-full p {
     font-size: 1.3rem;
+  }
+
+  /* Certificates still 2 per row on small phones */
+  .cert-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .cert-card {
+    padding: 1.8rem 1.4rem;
   }
 }
