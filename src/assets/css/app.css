@@ -303,6 +303,7 @@ textarea {
   width: min(100%, 400px);
   aspect-ratio: 1 / 1;
   object-fit: cover;
+  object-position: center 20%;
   border-radius: 50%;
   border: 6px solid var(--accent);
   box-shadow: 0 0 30px var(--accent), 0 0 60px rgba(139, 92, 246, 0.25);
