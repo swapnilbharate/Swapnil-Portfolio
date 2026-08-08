@@ -63,7 +63,7 @@
     white-space: nowrap;
   }
 
-  .nav-actions-right {
+  .nav-right-group {
     display: flex;
     align-items: center;
     gap: 1rem;

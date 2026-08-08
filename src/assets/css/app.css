@@ -157,29 +157,11 @@ textarea {
   color: transparent;
 }
 
-/* NAV CONTROLS & LIGHT/DARK MODE TOGGLE */
-.nav-controls-wrapper {
+.nav-right-group {
   display: flex;
   align-items: center;
-  gap: 1.2rem;
+  gap: 2.4rem;
   margin-left: auto;
-  margin-right: 1.5rem;
-}
-
-.theme-switcher-bar {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(148, 163, 184, 0.15);
-  padding: 0.5rem 1rem;
-  border-radius: 999px;
-}
-
-.nav-actions-right {
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
 }
 
 .mode-toggle-btn {

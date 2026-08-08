@@ -23,16 +23,8 @@ function Navbar() {
       <div className="container navbar-container">
         <a href="#home" className="logo">Swapnil Bharate</a>
 
-        <ul className={`nav-list ${menuOpen ? "open" : ""}`}>
-          <li><a href="#home" onClick={closeMenu}>Home</a></li>
-          <li><a href="#about" onClick={closeMenu}>About</a></li>
-          <li><a href="#skills" onClick={closeMenu}>Skills</a></li>
-          <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
-          <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
-        </ul>
-
-        <div className="nav-actions-right">
-          {/* Light / Dark Mode Toggle Button */}
+        <div className="nav-right-group">
+          {/* Day / Night Mode Button placed FIRST on the right side */}
           <button
             className="mode-toggle-btn"
             onClick={toggleLightDarkMode}
@@ -41,6 +33,15 @@ function Navbar() {
           >
             {isDarkMode ? <FaSun className="mode-icon sun" /> : <FaMoon className="mode-icon moon" />}
           </button>
+
+          {/* Navigation Links placed AFTER Day/Night Mode Button */}
+          <ul className={`nav-list ${menuOpen ? "open" : ""}`}>
+            <li><a href="#home" onClick={closeMenu}>Home</a></li>
+            <li><a href="#about" onClick={closeMenu}>About</a></li>
+            <li><a href="#skills" onClick={closeMenu}>Skills</a></li>
+            <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
+            <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
+          </ul>
 
           {/* Mobile Hamburger Menu Button */}
           <button
