@@ -8,24 +8,13 @@ import hibernate from "../assets/icons/hibernate-light.svg";
 import git from "../assets/icons/git.svg";
 import github from "../assets/icons/github-light.svg";
 import postman from "../assets/icons/postman.svg";
-import angular from "../assets/icons/angular.png";
 import react from "../assets/icons/react.png";
 import bootstrap from "../assets/icons/bootstrap.png";
 import redux from "../assets/icons/redux.png";
-import { FaServer, FaCode, FaTools } from "react-icons/fa";
+import { FaServer, FaCode, FaTools, FaLaptopCode, FaPlug, FaTerminal, FaDatabase } from "react-icons/fa";
 
 function Skills() {
   const skillCategories = [
-    {
-      title: "Backend & Database",
-      icon: <FaServer />,
-      skills: [
-        { img: java, name: "Java" },
-        { img: spring, name: "Spring Boot" },
-        { img: hibernate, name: "Hibernate" },
-        { img: mysql, name: "MySQL" },
-      ],
-    },
     {
       title: "Frontend Development",
       icon: <FaCode />,
@@ -36,7 +25,18 @@ function Skills() {
         { img: bootstrap, name: "Bootstrap" },
         { img: html, name: "HTML5" },
         { img: css, name: "CSS3" },
-        { img: angular, name: "Angular" },
+      ],
+    },
+    {
+      title: "Backend & Database",
+      icon: <FaServer />,
+      skills: [
+        { img: java, name: "Java" },
+        { img: spring, name: "Spring Boot" },
+        { img: hibernate, name: "Hibernate" },
+        { img: mysql, name: "MySQL" },
+        { icon: <FaDatabase />, name: "JDBC" },
+        { icon: <FaPlug />, name: "Servlets" },
       ],
     },
     {
@@ -46,6 +46,9 @@ function Skills() {
         { img: git, name: "Git" },
         { img: github, name: "GitHub" },
         { img: postman, name: "Postman" },
+        { icon: <FaLaptopCode />, name: "VS Code" },
+        { icon: <FaTerminal />, name: "Eclipse" },
+        { icon: <FaPlug />, name: "REST APIs" },
       ],
     },
   ];
@@ -69,7 +72,11 @@ function Skills() {
               <div className="skill-item-grid">
                 {cat.skills.map((skill, index) => (
                   <div className="skill-pill-cell" key={index}>
-                    <img src={skill.img} alt={skill.name} />
+                    {skill.img ? (
+                      <img src={skill.img} alt={skill.name} />
+                    ) : (
+                      <span className="skill-react-icon">{skill.icon}</span>
+                    )}
                     <span>{skill.name}</span>
                   </div>
                 ))}

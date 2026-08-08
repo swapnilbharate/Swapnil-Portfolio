@@ -1314,6 +1314,14 @@ textarea {
   object-fit: contain;
 }
 
+.skill-react-icon {
+  font-size: 1.8rem;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .skill-pill-cell span {
   font-size: 1.35rem;
   font-weight: 600;
