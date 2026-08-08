@@ -1,0 +1,2 @@
+# Redirect Netlify traffic to new live Vercel deployment
+/*   https://swapnil-portfolio-theta.vercel.app/:splat   301!
