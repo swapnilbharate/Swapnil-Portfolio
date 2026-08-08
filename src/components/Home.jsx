@@ -8,7 +8,7 @@ function Home() {
     const el = typingRef.current;
     if (!el) return;
 
-    const text = "Full Stack Developer";
+    const text = "Java Full Stack Developer";
     let index = 0;
     let timeoutId;
 
@@ -19,7 +19,6 @@ function Home() {
         el.textContent += text[index];
         index++;
         timeoutId = setTimeout(type, 110);
-        // stops automatically when done — no loop, no delete
       }
     };
 
@@ -35,17 +34,17 @@ function Home() {
           <h1>Swapnil Bharate</h1>
 
           <h3>
-            <span>I'm a</span>
+            <span>I'm a </span>
             <span ref={typingRef} className="text"></span>
           </h3>
 
           <p>
-            Passionate about building modern web applications using React, JavaScript, Java, Spring Boot, and SQL. I enjoy creating responsive user interfaces and solving real-world problems through innovative technology solutions.
+            Java Full Stack Developer with hands-on experience in Core Java, JDBC, Servlets, Spring Boot, React.js, HTML, CSS, Bootstrap, JavaScript, and MySQL. Passionate about building scalable web applications and solving real-world challenges.
           </p>
 
           <div className="hero-actions">
             <a
-              href="/Swapnil Bharate_CS.pdf"
+              href="/Swapnil_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-box"

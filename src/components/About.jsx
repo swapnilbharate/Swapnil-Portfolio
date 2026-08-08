@@ -9,10 +9,10 @@ function About() {
               About <span className="text">Me</span>
             </h1>
 
-            <h4 className="about-role">Full Stack Developer</h4>
+            <h4 className="about-role">Java Full Stack Developer</h4>
 
             <p className="about-desc">
-              Web Developer with hands-on experience in building responsive web applications using React, JavaScript, Java, and SQL. Proficient in frontend technologies like Redux, Bootstrap, and backend development with RESTful APIs. Completed a MERN Stack internship at EY Global Delivery Services (EY GDS), where I built full-stack applications and optimized app performance. Passionate about modern web technologies and turning ideas into real-world digital solutions.
+              Java Full Stack Developer with hands-on experience in Core Java, JDBC, Servlets, Hibernate, Spring Boot, React.js, HTML, CSS, Bootstrap, JavaScript, and MySQL. Strong foundation in Object-Oriented Programming (OOP), MVC Architecture, and database management, with experience in developing responsive web applications, writing clean and reusable code, and debugging application issues.
             </p>
           </div>
 
@@ -20,18 +20,36 @@ function About() {
           <div className="about-details">
             <div className="about-detail-card">
               <h3>Experience</h3>
-              <p style={{ color: "var(--text)", fontWeight: "600", fontSize: "1.6rem" }}>
-                MERN Stack Intern
-              </p>
-              <p style={{ color: "var(--accent)", fontSize: "1.4rem", fontWeight: "500", marginTop: "-0.4rem" }}>
-                EY Global Delivery Services (EY GDS)
-              </p>
-              <p style={{ fontSize: "1.3rem", color: "var(--text-soft)" }}>
-                Mar 2025 – Apr 2025 | Remote
-              </p>
-              <p style={{ fontSize: "1.4rem", lineHeight: "1.6" }}>
-                Developed full-stack web applications, designed responsive UIs, integrated secure RESTful APIs, and optimized app performance.
-              </p>
+              
+              <div style={{ marginBottom: "1.6rem" }}>
+                <p style={{ color: "var(--text)", fontWeight: "600", fontSize: "1.5rem" }}>
+                  Full Stack Intern
+                </p>
+                <p style={{ color: "var(--accent)", fontSize: "1.35rem", fontWeight: "500", marginTop: "-0.2rem" }}>
+                  Envision Computer Training Institute, Pune
+                </p>
+                <p style={{ fontSize: "1.25rem", color: "var(--text-soft)", marginBottom: "0.4rem" }}>
+                  Jan 2026 – Jun 2026 | Pune
+                </p>
+                <p style={{ fontSize: "1.3rem", lineHeight: "1.5", color: "var(--text-soft)" }}>
+                  Developed Java-based full-stack applications using Core Java, JDBC, Servlets, and Spring Boot. Applied OOP and MVC architecture.
+                </p>
+              </div>
+
+              <div>
+                <p style={{ color: "var(--text)", fontWeight: "600", fontSize: "1.5rem" }}>
+                  MERN Stack Intern
+                </p>
+                <p style={{ color: "var(--accent)", fontSize: "1.35rem", fontWeight: "500", marginTop: "-0.2rem" }}>
+                  EY Global Delivery Services (EY GDS)
+                </p>
+                <p style={{ fontSize: "1.25rem", color: "var(--text-soft)", marginBottom: "0.4rem" }}>
+                  Mar 2025 – Apr 2025 | Remote
+                </p>
+                <p style={{ fontSize: "1.3rem", lineHeight: "1.5", color: "var(--text-soft)" }}>
+                  Developed full-stack web applications using MERN stack, designed responsive UIs, and integrated secure RESTful APIs.
+                </p>
+              </div>
             </div>
 
             <div className="about-detail-card">
@@ -43,11 +61,11 @@ function About() {
                 Trinity College of Engineering and Research, Pune
               </p>
               <p style={{ fontSize: "1.3rem", color: "var(--text-soft)" }}>
-                Computer Engineering | Expected 2026
+                Computer Engineering | 2022 – 2026
               </p>
               <p style={{ fontSize: "1.4rem", lineHeight: "1.6" }}>
-                <strong>CGPA: 9.35</strong> <br />
-                HSC: Dadapatil Mahavidyalaya (61%) <br />
+                <strong>CGPA: 7.96</strong> <br />
+                HSC: Dadapatil Mahavidyalaya, Karjat (61%) <br />
                 SSC: Shree Ravishankar Vidyamandir (86.80%)
               </p>
             </div>
