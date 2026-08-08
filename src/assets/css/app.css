@@ -59,6 +59,60 @@
     linear-gradient(180deg, #101c18 0%, #0b1210 100%) !important;
 }
 
+/* OPTION 4: Sunset Crimson & Solar Gold Theme */
+[data-theme="crimson"] {
+  --bg: #0a080d;
+  --surface: rgba(39, 27, 45, 0.95);
+  --border: rgba(244, 63, 94, 0.25);
+  --text: #ffffff;
+  --text-soft: #cbd5e1;
+  --text-muted: #94a3b8;
+  --accent: #f43f5e;
+  --accent-strong: #fbbf24;
+}
+
+[data-theme="crimson"] body {
+  background: radial-gradient(circle at top left, rgba(244, 63, 94, 0.18), transparent 22%),
+    radial-gradient(circle at bottom right, rgba(251, 191, 36, 0.15), transparent 25%),
+    linear-gradient(180deg, #170f1e 0%, #0a080d 100%) !important;
+}
+
+/* OPTION 5: Deep Space Indigo & Electric Lime Theme */
+[data-theme="indigo"] {
+  --bg: #090914;
+  --surface: rgba(30, 27, 75, 0.95);
+  --border: rgba(132, 204, 22, 0.25);
+  --text: #ffffff;
+  --text-soft: #a5b4fc;
+  --text-muted: #cbd5e1;
+  --accent: #84cc16;
+  --accent-strong: #a3e635;
+}
+
+[data-theme="indigo"] body {
+  background: radial-gradient(circle at top left, rgba(132, 204, 22, 0.18), transparent 22%),
+    radial-gradient(circle at bottom right, rgba(99, 102, 241, 0.15), transparent 25%),
+    linear-gradient(180deg, #111124 0%, #090914 100%) !important;
+}
+
+/* OPTION 6: Dark Ruby Rose & Platinum Theme */
+[data-theme="ruby"] {
+  --bg: #12080d;
+  --surface: rgba(42, 18, 30, 0.95);
+  --border: rgba(244, 63, 94, 0.25);
+  --text: #f8fafc;
+  --text-soft: #e2e8f0;
+  --text-muted: #cbd5e1;
+  --accent: #f43f5e;
+  --accent-strong: #fda4af;
+}
+
+[data-theme="ruby"] body {
+  background: radial-gradient(circle at top left, rgba(244, 63, 94, 0.18), transparent 22%),
+    radial-gradient(circle at bottom right, rgba(225, 29, 72, 0.15), transparent 25%),
+    linear-gradient(180deg, #1d0d15 0%, #12080d 100%) !important;
+}
+
 html {
   font-size: 62.5%;
   min-height: 100%;
@@ -180,6 +234,9 @@ textarea {
 .dot-violet { background: linear-gradient(135deg, #8b5cf6, #ec4899); }
 .dot-cyan { background: linear-gradient(135deg, #06b6d4, #2563eb); }
 .dot-emerald { background: linear-gradient(135deg, #10b981, #f59e0b); }
+.dot-crimson { background: linear-gradient(135deg, #f43f5e, #fbbf24); }
+.dot-indigo { background: linear-gradient(135deg, #84cc16, #6366f1); }
+.dot-ruby { background: linear-gradient(135deg, #f43f5e, #e2e8f0); }
 
 .nav-list {
   display: flex;
