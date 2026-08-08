@@ -28,13 +28,13 @@
   --bg: #f0f9ff;
   --surface: #ffffff;
   --surface-strong: #e0f2fe;
-  --border: rgba(2, 132, 199, 0.25);
+  --border: rgba(2, 132, 199, 0.4);
   --text: #0f172a;
   --text-soft: #334155;
-  --text-muted: #64748b;
+  --text-muted: #475569;
   --accent: #0284c7;
   --accent-strong: #2563eb;
-  --shadow: 0 10px 40px rgba(2, 132, 199, 0.08);
+  --shadow: 0 12px 36px rgba(2, 132, 199, 0.12), 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 [data-mode="light"] body {
@@ -45,8 +45,9 @@
 }
 
 [data-mode="light"] .navbar {
-  background: rgba(255, 255, 255, 0.95);
-  border-bottom: 1px solid rgba(2, 132, 199, 0.2);
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 2px solid rgba(2, 132, 199, 0.3);
+  box-shadow: 0 4px 20px rgba(2, 132, 199, 0.08);
 }
 
 [data-mode="light"] .navbar a {
@@ -61,20 +62,50 @@
 [data-mode="light"] .contact-text,
 [data-mode="light"] .contact-form {
   background: #ffffff !important;
-  border-color: rgba(2, 132, 199, 0.2) !important;
-  box-shadow: 0 10px 30px rgba(2, 132, 199, 0.08) !important;
+  border: 2px solid rgba(2, 132, 199, 0.35) !important;
+  box-shadow: 0 12px 35px rgba(2, 132, 199, 0.12), 0 2px 8px rgba(0, 0, 0, 0.04) !important;
 }
 
 [data-mode="light"] .skill-pill-cell {
-  background: #e0f2fe !important;
-  border-color: rgba(2, 132, 199, 0.2) !important;
+  background: #f0f9ff !important;
+  border: 1.5px solid rgba(2, 132, 199, 0.35) !important;
+}
+
+[data-mode="light"] .skill-pill-cell span {
+  color: #0f172a !important;
+}
+
+[data-mode="light"] .filter-btn {
+  background: #ffffff !important;
+  border: 1.5px solid rgba(2, 132, 199, 0.35) !important;
+  color: #334155 !important;
+}
+
+[data-mode="light"] .filter-btn.active {
+  background: linear-gradient(135deg, #0284c7, #2563eb) !important;
+  color: #ffffff !important;
+  border-color: transparent !important;
+}
+
+[data-mode="light"] .project-card {
+  border: 2px solid rgba(2, 132, 199, 0.35) !important;
+}
+
+[data-mode="light"] .project-image {
+  background: #060d19 !important;
+  border-bottom: 2px solid rgba(2, 132, 199, 0.25) !important;
 }
 
 [data-mode="light"] .contact-form input,
 [data-mode="light"] .contact-form textarea {
   background: #f8fafc !important;
   color: #0f172a !important;
-  border-color: rgba(2, 132, 199, 0.3) !important;
+  border: 2px solid rgba(2, 132, 199, 0.35) !important;
+}
+
+[data-mode="light"] .mode-toggle-btn {
+  background: #e0f2fe !important;
+  border: 2px solid rgba(2, 132, 199, 0.4) !important;
 }
 
 html {
