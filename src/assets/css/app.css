@@ -8,17 +8,17 @@
 
 :root {
   --navbar-height: 7.2rem;
-  --bg: #0c0618;
+  --bg: #0d1117;
   --bg-soft: rgba(255, 255, 255, 0.05);
-  --surface: rgba(18, 10, 40, 0.95);
-  --surface-strong: rgba(22, 12, 48, 0.92);
-  --border: rgba(148, 163, 184, 0.16);
-  --text: #e2e8f0;
-  --text-soft: #a0a3b8;
-  --text-muted: #cbd5e1;
-  --accent: #a78bfa;
-  --accent-strong: #c084fc;
-  --shadow: 0 26px 80px rgba(0, 0, 0, 0.3);
+  --surface: rgba(18, 26, 23, 0.95);
+  --surface-strong: rgba(22, 32, 28, 0.92);
+  --border: rgba(16, 185, 129, 0.22);
+  --text: #fef3c7;
+  --text-soft: #d1d5db;
+  --text-muted: #e2e8f0;
+  --accent: #10b981;
+  --accent-strong: #f59e0b;
+  --shadow: 0 26px 80px rgba(0, 0, 0, 0.4);
   --radius: 32px;
   scroll-behavior: smooth;
 }
@@ -124,9 +124,9 @@ body {
   min-height: 100vh;
   font-family: 'Inter', sans-serif;
   color: var(--text);
-  background: radial-gradient(circle at top left, rgba(139, 92, 246, 0.15), transparent 18%),
-    radial-gradient(circle at bottom right, rgba(217, 70, 239, 0.12), transparent 22%),
-    linear-gradient(180deg, #10061e 0%, #0c0618 100%);
+  background: radial-gradient(circle at top left, rgba(16, 185, 129, 0.18), transparent 22%),
+    radial-gradient(circle at bottom right, rgba(245, 158, 11, 0.15), transparent 25%),
+    linear-gradient(180deg, #101c18 0%, #0d1117 100%);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }

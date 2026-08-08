@@ -3,18 +3,14 @@ import { FaPalette } from "react-icons/fa";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activeTheme, setActiveTheme] = useState("violet");
+  const [activeTheme, setActiveTheme] = useState("emerald");
 
   const toggleMenu = () => setMenuOpen((prev) => !prev);
   const closeMenu = () => setMenuOpen(false);
 
   const applyTheme = (themeName) => {
     setActiveTheme(themeName);
-    if (themeName === "violet") {
-      document.documentElement.removeAttribute("data-theme");
-    } else {
-      document.documentElement.setAttribute("data-theme", themeName);
-    }
+    document.documentElement.setAttribute("data-theme", themeName);
   };
 
   const themes = [
