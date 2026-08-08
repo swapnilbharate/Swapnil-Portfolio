@@ -23,7 +23,15 @@ function Navbar() {
       <div className="container navbar-container">
         <a href="#home" className="logo">Swapnil Bharate</a>
 
-        <div className="nav-controls-right">
+        <ul className={`nav-list ${menuOpen ? "open" : ""}`}>
+          <li><a href="#home" onClick={closeMenu}>Home</a></li>
+          <li><a href="#about" onClick={closeMenu}>About</a></li>
+          <li><a href="#skills" onClick={closeMenu}>Skills</a></li>
+          <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
+          <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
+        </ul>
+
+        <div className="nav-actions-right">
           {/* Light / Dark Mode Toggle Button */}
           <button
             className="mode-toggle-btn"
@@ -34,6 +42,7 @@ function Navbar() {
             {isDarkMode ? <FaSun className="mode-icon sun" /> : <FaMoon className="mode-icon moon" />}
           </button>
 
+          {/* Mobile Hamburger Menu Button */}
           <button
             className={`hamburger ${menuOpen ? "active" : ""}`}
             onClick={toggleMenu}
@@ -44,14 +53,6 @@ function Navbar() {
             <span></span>
           </button>
         </div>
-
-        <ul className={`nav-list ${menuOpen ? "open" : ""}`}>
-          <li><a href="#home" onClick={closeMenu}>Home</a></li>
-          <li><a href="#about" onClick={closeMenu}>About</a></li>
-          <li><a href="#skills" onClick={closeMenu}>Skills</a></li>
-          <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
-          <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
-        </ul>
       </div>
     </nav>
   );
