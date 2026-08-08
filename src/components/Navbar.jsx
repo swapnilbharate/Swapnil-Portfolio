@@ -1,15 +1,46 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { FaPalette } from "react-icons/fa";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeTheme, setActiveTheme] = useState("violet");
 
   const toggleMenu = () => setMenuOpen((prev) => !prev);
   const closeMenu = () => setMenuOpen(false);
+
+  const applyTheme = (themeName) => {
+    setActiveTheme(themeName);
+    if (themeName === "violet") {
+      document.documentElement.removeAttribute("data-theme");
+    } else {
+      document.documentElement.setAttribute("data-theme", themeName);
+    }
+  };
 
   return (
     <nav className="navbar">
       <div className="container">
         <a href="#home" className="logo">Swapnil Bharate</a>
+
+        {/* Live Theme Switcher */}
+        <div className="theme-switcher-bar">
+          <FaPalette className="theme-icon" title="Theme Selector" />
+          <button
+            className={`theme-dot dot-violet ${activeTheme === "violet" ? "active" : ""}`}
+            onClick={() => applyTheme("violet")}
+            title="Theme 1: Cyber Violet"
+          ></button>
+          <button
+            className={`theme-dot dot-cyan ${activeTheme === "cyan" ? "active" : ""}`}
+            onClick={() => applyTheme("cyan")}
+            title="Theme 2: Royal Sapphire & Cyan"
+          ></button>
+          <button
+            className={`theme-dot dot-emerald ${activeTheme === "emerald" ? "active" : ""}`}
+            onClick={() => applyTheme("emerald")}
+            title="Theme 3: Emerald & Gold"
+          ></button>
+        </div>
 
         <button
           className={`hamburger ${menuOpen ? "active" : ""}`}
