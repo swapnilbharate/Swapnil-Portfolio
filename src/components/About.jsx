@@ -1,4 +1,4 @@
-import { FaUserGraduate, FaBriefcase, FaGraduationCap } from "react-icons/fa";
+import { FaUserCheck, FaBriefcase, FaGraduationCap } from "react-icons/fa";
 
 function About() {
   return (
@@ -12,29 +12,21 @@ function About() {
         </p>
 
         <div className="about-grid">
-          {/* Card 1: About Me */}
+          {/* Card 1: Professional Overview */}
           <div className="about-col-card">
             <div className="about-card-header">
               <div className="about-card-icon">
-                <FaUserGraduate />
+                <FaUserCheck />
               </div>
               <div>
-                <h3 className="about-card-title">Who I Am</h3>
+                <h3 className="about-card-title">Professional Overview</h3>
                 <span className="about-card-role">Java Full Stack Developer</span>
               </div>
             </div>
 
-            <p className="about-card-desc">
+            <p className="about-card-desc" style={{ fontSize: "1.45rem", lineHeight: "1.85" }}>
               Java Full Stack Developer with hands-on experience in Core Java, JDBC, Servlets, Hibernate, Spring Boot, React.js, HTML, CSS, Bootstrap, JavaScript, and MySQL. Strong foundation in Object-Oriented Programming (OOP), MVC Architecture, and database management, writing clean code and building responsive web applications.
             </p>
-
-            <div className="about-tech-badges">
-              <span>Core Java</span>
-              <span>Spring Boot</span>
-              <span>React.js</span>
-              <span>MySQL</span>
-              <span>OOP & MVC</span>
-            </div>
           </div>
 
           {/* Card 2: Experience */}
