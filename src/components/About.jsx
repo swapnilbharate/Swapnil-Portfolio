@@ -1,73 +1,118 @@
+import { FaUserGraduate, FaBriefcase, FaGraduationCap } from "react-icons/fa";
+
 function About() {
   return (
     <section className="about section" id="about">
       <div className="container">
-        <div className="about-card">
-          {/* Left Column: Personal info & description */}
-          <div className="about-copy">
-            <h1 className="about-title">
-              About <span className="text">Me</span>
-            </h1>
+        <h1 className="section-title">
+          About <span className="text">Me</span>
+        </h1>
+        <p className="section-subtitle about-subtitle">
+          "Passionate Java Full Stack Developer building scalable web applications"
+        </p>
 
-            <h4 className="about-role">Java Full Stack Developer</h4>
-
-            <p className="about-desc">
-              Java Full Stack Developer with hands-on experience in Core Java, JDBC, Servlets, Hibernate, Spring Boot, React.js, HTML, CSS, Bootstrap, JavaScript, and MySQL. Strong foundation in Object-Oriented Programming (OOP), MVC Architecture, and database management, with experience in developing responsive web applications, writing clean and reusable code, and debugging application issues.
-            </p>
-          </div>
-
-          {/* Right Column: Experience & Education */}
-          <div className="about-details">
-            <div className="about-detail-card">
-              <h3>Experience</h3>
-              
-              <div style={{ marginBottom: "1.6rem" }}>
-                <p style={{ color: "var(--text)", fontWeight: "600", fontSize: "1.5rem" }}>
-                  Full Stack Intern
-                </p>
-                <p style={{ color: "var(--accent)", fontSize: "1.35rem", fontWeight: "500", marginTop: "-0.2rem" }}>
-                  Envision Computer Training Institute, Pune
-                </p>
-                <p style={{ fontSize: "1.25rem", color: "var(--text-soft)", marginBottom: "0.4rem" }}>
-                  Jan 2026 – Jun 2026 | Pune
-                </p>
-                <p style={{ fontSize: "1.3rem", lineHeight: "1.5", color: "var(--text-soft)" }}>
-                  Developed Java-based full-stack applications using Core Java, JDBC, Servlets, and Spring Boot. Applied OOP and MVC architecture.
-                </p>
+        <div className="about-grid">
+          {/* Card 1: About Me */}
+          <div className="about-col-card">
+            <div className="about-card-header">
+              <div className="about-card-icon">
+                <FaUserGraduate />
               </div>
-
               <div>
-                <p style={{ color: "var(--text)", fontWeight: "600", fontSize: "1.5rem" }}>
-                  MERN Stack Intern
-                </p>
-                <p style={{ color: "var(--accent)", fontSize: "1.35rem", fontWeight: "500", marginTop: "-0.2rem" }}>
-                  EY Global Delivery Services (EY GDS)
-                </p>
-                <p style={{ fontSize: "1.25rem", color: "var(--text-soft)", marginBottom: "0.4rem" }}>
-                  Mar 2025 – Apr 2025 | Remote
-                </p>
-                <p style={{ fontSize: "1.3rem", lineHeight: "1.5", color: "var(--text-soft)" }}>
-                  Developed full-stack web applications using MERN stack, designed responsive UIs, and integrated secure RESTful APIs.
-                </p>
+                <h3 className="about-card-title">Who I Am</h3>
+                <span className="about-card-role">Java Full Stack Developer</span>
               </div>
             </div>
 
-            <div className="about-detail-card">
-              <h3>Education</h3>
-              <p style={{ color: "var(--text)", fontWeight: "600", fontSize: "1.6rem" }}>
-                Bachelor of Engineering (B.E.)
-              </p>
-              <p style={{ color: "var(--accent)", fontSize: "1.4rem", fontWeight: "500", marginTop: "-0.4rem" }}>
-                Trinity College of Engineering and Research, Pune
-              </p>
-              <p style={{ fontSize: "1.3rem", color: "var(--text-soft)" }}>
-                Computer Engineering | 2022 – 2026
-              </p>
-              <p style={{ fontSize: "1.4rem", lineHeight: "1.6" }}>
-                <strong>CGPA: 7.96</strong> <br />
-                HSC: Dadapatil Mahavidyalaya, Karjat (61%) <br />
-                SSC: Shree Ravishankar Vidyamandir (86.80%)
-              </p>
+            <p className="about-card-desc">
+              Java Full Stack Developer with hands-on experience in Core Java, JDBC, Servlets, Hibernate, Spring Boot, React.js, HTML, CSS, Bootstrap, JavaScript, and MySQL. Strong foundation in Object-Oriented Programming (OOP), MVC Architecture, and database management, writing clean code and building responsive web applications.
+            </p>
+
+            <div className="about-tech-badges">
+              <span>Core Java</span>
+              <span>Spring Boot</span>
+              <span>React.js</span>
+              <span>MySQL</span>
+              <span>OOP & MVC</span>
+            </div>
+          </div>
+
+          {/* Card 2: Experience */}
+          <div className="about-col-card">
+            <div className="about-card-header">
+              <div className="about-card-icon">
+                <FaBriefcase />
+              </div>
+              <div>
+                <h3 className="about-card-title">Experience</h3>
+                <span className="about-card-role">Internships & Hands-on Work</span>
+              </div>
+            </div>
+
+            <div className="about-timeline-list">
+              <div className="about-timeline-item">
+                <div className="item-header">
+                  <h4>Full Stack Intern</h4>
+                  <span className="item-date">Jan 2026 – Jun 2026</span>
+                </div>
+                <p className="item-org">Envision Computer Training Institute, Pune</p>
+                <p className="item-desc">
+                  Developed Java-based full-stack applications using Core Java, JDBC, Servlets, and Spring Boot applying OOP and MVC architecture.
+                </p>
+              </div>
+
+              <div className="about-timeline-item">
+                <div className="item-header">
+                  <h4>MERN Stack Intern</h4>
+                  <span className="item-date">Mar 2025 – Apr 2025</span>
+                </div>
+                <p className="item-org">EY Global Delivery Services (EY GDS)</p>
+                <p className="item-desc">
+                  Developed full-stack web applications using MERN stack, designed responsive UIs, and integrated RESTful APIs for efficient data communication.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 3: Education */}
+          <div className="about-col-card">
+            <div className="about-card-header">
+              <div className="about-card-icon">
+                <FaGraduationCap />
+              </div>
+              <div>
+                <h3 className="about-card-title">Education</h3>
+                <span className="about-card-role">Academic Background</span>
+              </div>
+            </div>
+
+            <div className="about-edu-list">
+              <div className="about-edu-item">
+                <div className="item-header">
+                  <h4>B.E. Computer Engineering</h4>
+                  <span className="cgpa-badge">CGPA: 7.96</span>
+                </div>
+                <p className="item-org">Trinity College of Engineering and Research, Pune</p>
+                <p className="item-sub">2022 – 2026</p>
+              </div>
+
+              <div className="about-edu-item">
+                <div className="item-header">
+                  <h4>Higher Secondary Education (HSC)</h4>
+                  <span className="score-badge">61%</span>
+                </div>
+                <p className="item-org">Dadapatil Mahavidyalaya, Karjat</p>
+                <p className="item-sub">2021 – 2022</p>
+              </div>
+
+              <div className="about-edu-item">
+                <div className="item-header">
+                  <h4>Secondary Education (SSC)</h4>
+                  <span className="score-badge">86.80%</span>
+                </div>
+                <p className="item-org">Shree Ravishankar Vidyamandir, Karjat</p>
+                <p className="item-sub">2019 – 2020</p>
+              </div>
             </div>
           </div>
         </div>

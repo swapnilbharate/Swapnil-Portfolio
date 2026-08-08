@@ -567,17 +567,9 @@ img {
     padding: 0.8rem 1rem;
 }
 
-/* Prevent huge vertical gaps on small viewports */
-@media (max-width: 768px) {
-    main {
-        margin-bottom: 2.5rem;
-    }
-
-    .about {
-        margin-bottom: 4rem;
-    }
-
-    .projects {
-        margin-bottom: 4rem;
+@media (max-width: 1024px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
 }
