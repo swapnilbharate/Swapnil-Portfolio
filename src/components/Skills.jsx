@@ -11,7 +11,7 @@ import postman from "../assets/icons/postman.svg";
 import react from "../assets/icons/react.png";
 import bootstrap from "../assets/icons/bootstrap.png";
 import redux from "../assets/icons/redux.png";
-import { FaServer, FaCode, FaTools, FaLaptopCode, FaPlug, FaTerminal, FaDatabase } from "react-icons/fa";
+import { FaServer, FaCode, FaTools, FaDatabase, FaPlug, FaLaptopCode, FaTerminal, FaKey, FaLayerGroup } from "react-icons/fa";
 
 function Skills() {
   const skillCategories = [
@@ -28,15 +28,27 @@ function Skills() {
       ],
     },
     {
-      title: "Backend & Database",
+      title: "Backend Development",
       icon: <FaServer />,
       skills: [
-        { img: java, name: "Java" },
+        { img: java, name: "Core Java" },
         { img: spring, name: "Spring Boot" },
         { img: hibernate, name: "Hibernate" },
-        { img: mysql, name: "MySQL" },
         { icon: <FaDatabase />, name: "JDBC" },
         { icon: <FaPlug />, name: "Servlets" },
+        { icon: <FaLayerGroup />, name: "OOP & MVC" },
+      ],
+    },
+    {
+      title: "Database & Cloud",
+      icon: <FaDatabase />,
+      skills: [
+        { img: mysql, name: "MySQL" },
+        { icon: <FaDatabase />, name: "PostgreSQL" },
+        { icon: <FaDatabase />, name: "MongoDB" },
+        { icon: <FaPlug />, name: "REST APIs" },
+        { icon: <FaKey />, name: "JWT Auth" },
+        { icon: <FaLayerGroup />, name: "Context API" },
       ],
     },
     {
@@ -48,7 +60,7 @@ function Skills() {
         { img: postman, name: "Postman" },
         { icon: <FaLaptopCode />, name: "VS Code" },
         { icon: <FaTerminal />, name: "Eclipse" },
-        { icon: <FaPlug />, name: "REST APIs" },
+        { icon: <FaLayerGroup />, name: "Vite & npm" },
       ],
     },
   ];

@@ -1239,8 +1239,8 @@ textarea {
 /* 3. Categorized Skills Section */
 .skills-category-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
   margin-top: 3rem;
 }
 
@@ -1286,20 +1286,22 @@ textarea {
 }
 
 .skill-item-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.2rem;
 }
 
 .skill-pill-cell {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.8rem;
-  padding: 0.8rem 1.4rem;
+  padding: 1rem 1.2rem;
   border-radius: 1.2rem;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(148, 163, 184, 0.12);
   transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+  width: 100%;
 }
 
 .skill-pill-cell:hover {
