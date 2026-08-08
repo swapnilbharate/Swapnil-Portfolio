@@ -44,34 +44,41 @@
     padding-bottom: 1.5rem;
   }
 
-  /* NAVBAR MOBILE */
+  /* NAVBAR MOBILE - ONE SINGLE LINE ALIGNMENT */
   .navbar {
-    padding: 1rem 1.6rem;
+    padding: 0.8rem 1.4rem;
   }
 
-  .nav-controls-wrapper {
-    gap: 0.6rem;
+  .navbar .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8rem;
+  }
+
+  .logo {
+    font-size: 1.7rem;
+    white-space: nowrap;
+  }
+
+  .nav-controls-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
     margin-left: auto;
-    margin-right: 0.8rem;
-  }
-
-  .theme-switcher-bar {
-    padding: 0.3rem 0.6rem;
-    gap: 0.5rem;
-  }
-
-  .theme-dot {
-    width: 1.5rem;
-    height: 1.5rem;
   }
 
   .mode-toggle-btn {
-    width: 3.2rem;
-    height: 3.2rem;
+    width: 3.4rem;
+    height: 3.4rem;
+    flex-shrink: 0;
   }
 
   .hamburger {
     display: flex;
+    flex-shrink: 0;
   }
 
   .nav-list {

@@ -8,48 +8,45 @@
 
 :root {
   --navbar-height: 7.2rem;
-  --bg: #0d1117;
+  --bg: #060d19;
   --bg-soft: rgba(255, 255, 255, 0.05);
-  --surface: rgba(18, 26, 23, 0.95);
-  --surface-strong: rgba(22, 32, 28, 0.92);
-  --border: rgba(16, 185, 129, 0.22);
-  --text: #fef3c7;
-  --text-soft: #d1d5db;
-  --text-muted: #e2e8f0;
-  --accent: #10b981;
-  --accent-strong: #f59e0b;
+  --surface: rgba(15, 23, 42, 0.95);
+  --surface-strong: rgba(22, 36, 62, 0.92);
+  --border: rgba(6, 182, 212, 0.25);
+  --text: #f8fafc;
+  --text-soft: #cbd5e1;
+  --text-muted: #94a3b8;
+  --accent: #06b6d4;
+  --accent-strong: #22d3ee;
   --shadow: 0 26px 80px rgba(0, 0, 0, 0.4);
   --radius: 32px;
   scroll-behavior: smooth;
 }
 
-/* ==========================================================================
-   LIGHT MODE & THEMES SYSTEM
-   ========================================================================== */
-
+/* DAY MODE (LIGHT MODE FOR CYAN / BLUISH THEME) */
 [data-mode="light"] {
-  --bg: #f8fafc;
+  --bg: #f0f9ff;
   --surface: #ffffff;
-  --surface-strong: #f1f5f9;
-  --border: rgba(148, 163, 184, 0.25);
+  --surface-strong: #e0f2fe;
+  --border: rgba(2, 132, 199, 0.25);
   --text: #0f172a;
   --text-soft: #334155;
   --text-muted: #64748b;
-  --accent: #059669;
-  --accent-strong: #d97706;
-  --shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  --accent: #0284c7;
+  --accent-strong: #2563eb;
+  --shadow: 0 10px 40px rgba(2, 132, 199, 0.08);
 }
 
 [data-mode="light"] body {
-  background: radial-gradient(circle at top left, rgba(16, 185, 129, 0.08), transparent 22%),
-    radial-gradient(circle at bottom right, rgba(245, 158, 11, 0.08), transparent 25%),
-    linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%) !important;
+  background: radial-gradient(circle at top left, rgba(6, 182, 212, 0.12), transparent 22%),
+    radial-gradient(circle at bottom right, rgba(37, 99, 235, 0.1), transparent 25%),
+    linear-gradient(180deg, #f0f9ff 0%, #e0f2fe 100%) !important;
   color: #0f172a !important;
 }
 
 [data-mode="light"] .navbar {
-  background: rgba(255, 255, 255, 0.92);
-  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid rgba(2, 132, 199, 0.2);
 }
 
 [data-mode="light"] .navbar a {
@@ -64,142 +61,20 @@
 [data-mode="light"] .contact-text,
 [data-mode="light"] .contact-form {
   background: #ffffff !important;
-  border-color: rgba(148, 163, 184, 0.25) !important;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06) !important;
+  border-color: rgba(2, 132, 199, 0.2) !important;
+  box-shadow: 0 10px 30px rgba(2, 132, 199, 0.08) !important;
 }
 
 [data-mode="light"] .skill-pill-cell {
-  background: #f1f5f9 !important;
-  border-color: rgba(148, 163, 184, 0.25) !important;
+  background: #e0f2fe !important;
+  border-color: rgba(2, 132, 199, 0.2) !important;
 }
 
 [data-mode="light"] .contact-form input,
 [data-mode="light"] .contact-form textarea {
   background: #f8fafc !important;
   color: #0f172a !important;
-  border-color: rgba(148, 163, 184, 0.3) !important;
-}
-
-[data-mode="light"][data-theme="cyan"] {
-  --bg: #f0f9ff;
-  --surface: #ffffff;
-  --border: rgba(2, 132, 199, 0.25);
-  --text: #0f172a;
-  --text-soft: #334155;
-  --accent: #0284c7;
-  --accent-strong: #2563eb;
-}
-
-[data-mode="light"][data-theme="cyan"] body {
-  background: radial-gradient(circle at top left, rgba(6, 182, 212, 0.1), transparent 22%),
-    radial-gradient(circle at bottom right, rgba(37, 99, 235, 0.08), transparent 25%),
-    linear-gradient(180deg, #f0f9ff 0%, #e0f2fe 100%) !important;
-}
-
-[data-mode="light"][data-theme="violet"] {
-  --bg: #faf5ff;
-  --surface: #ffffff;
-  --border: rgba(124, 58, 237, 0.25);
-  --text: #0f172a;
-  --text-soft: #334155;
-  --accent: #7c3aed;
-  --accent-strong: #c084fc;
-}
-
-[data-mode="light"][data-theme="violet"] body {
-  background: radial-gradient(circle at top left, rgba(139, 92, 246, 0.1), transparent 22%),
-    radial-gradient(circle at bottom right, rgba(236, 72, 153, 0.08), transparent 25%),
-    linear-gradient(180deg, #faf5ff 0%, #f3e8ff 100%) !important;
-}
-
-/* OPTION 2: Royal Sapphire & Electric Cyan Theme */
-[data-theme="cyan"] {
-  --bg: #060d19;
-  --surface: rgba(15, 23, 42, 0.95);
-  --border: rgba(6, 182, 212, 0.25);
-  --text: #f8fafc;
-  --text-soft: #cbd5e1;
-  --text-muted: #94a3b8;
-  --accent: #06b6d4;
-  --accent-strong: #22d3ee;
-}
-
-[data-theme="cyan"] body {
-  background: radial-gradient(circle at top left, rgba(6, 182, 212, 0.18), transparent 22%),
-    radial-gradient(circle at bottom right, rgba(37, 99, 235, 0.15), transparent 25%),
-    linear-gradient(180deg, #091424 0%, #060d19 100%) !important;
-}
-
-/* OPTION 3: Emerald Mint & Amber Gold Theme */
-[data-theme="emerald"] {
-  --bg: #0b1210;
-  --surface: rgba(18, 26, 23, 0.95);
-  --border: rgba(16, 185, 129, 0.25);
-  --text: #fef3c7;
-  --text-soft: #e2e8f0;
-  --text-muted: #cbd5e1;
-  --accent: #10b981;
-  --accent-strong: #34d399;
-}
-
-[data-theme="emerald"] body {
-  background: radial-gradient(circle at top left, rgba(16, 185, 129, 0.18), transparent 22%),
-    radial-gradient(circle at bottom right, rgba(245, 158, 11, 0.15), transparent 25%),
-    linear-gradient(180deg, #101c18 0%, #0b1210 100%) !important;
-}
-
-/* OPTION 4: Sunset Crimson & Solar Gold Theme */
-[data-theme="crimson"] {
-  --bg: #0a080d;
-  --surface: rgba(39, 27, 45, 0.95);
-  --border: rgba(244, 63, 94, 0.25);
-  --text: #ffffff;
-  --text-soft: #cbd5e1;
-  --text-muted: #94a3b8;
-  --accent: #f43f5e;
-  --accent-strong: #fbbf24;
-}
-
-[data-theme="crimson"] body {
-  background: radial-gradient(circle at top left, rgba(244, 63, 94, 0.18), transparent 22%),
-    radial-gradient(circle at bottom right, rgba(251, 191, 36, 0.15), transparent 25%),
-    linear-gradient(180deg, #170f1e 0%, #0a080d 100%) !important;
-}
-
-/* OPTION 5: Deep Space Indigo & Electric Lime Theme */
-[data-theme="indigo"] {
-  --bg: #090914;
-  --surface: rgba(30, 27, 75, 0.95);
-  --border: rgba(132, 204, 22, 0.25);
-  --text: #ffffff;
-  --text-soft: #a5b4fc;
-  --text-muted: #cbd5e1;
-  --accent: #84cc16;
-  --accent-strong: #a3e635;
-}
-
-[data-theme="indigo"] body {
-  background: radial-gradient(circle at top left, rgba(132, 204, 22, 0.18), transparent 22%),
-    radial-gradient(circle at bottom right, rgba(99, 102, 241, 0.15), transparent 25%),
-    linear-gradient(180deg, #111124 0%, #090914 100%) !important;
-}
-
-/* OPTION 6: Dark Ruby Rose & Platinum Theme */
-[data-theme="ruby"] {
-  --bg: #12080d;
-  --surface: rgba(42, 18, 30, 0.95);
-  --border: rgba(244, 63, 94, 0.25);
-  --text: #f8fafc;
-  --text-soft: #e2e8f0;
-  --text-muted: #cbd5e1;
-  --accent: #f43f5e;
-  --accent-strong: #fda4af;
-}
-
-[data-theme="ruby"] body {
-  background: radial-gradient(circle at top left, rgba(244, 63, 94, 0.18), transparent 22%),
-    radial-gradient(circle at bottom right, rgba(225, 29, 72, 0.15), transparent 25%),
-    linear-gradient(180deg, #1d0d15 0%, #12080d 100%) !important;
+  border-color: rgba(2, 132, 199, 0.3) !important;
 }
 
 html {
@@ -213,9 +88,9 @@ body {
   min-height: 100vh;
   font-family: 'Inter', sans-serif;
   color: var(--text);
-  background: radial-gradient(circle at top left, rgba(16, 185, 129, 0.18), transparent 22%),
-    radial-gradient(circle at bottom right, rgba(245, 158, 11, 0.15), transparent 25%),
-    linear-gradient(180deg, #101c18 0%, #0d1117 100%);
+  background: radial-gradient(circle at top left, rgba(6, 182, 212, 0.18), transparent 22%),
+    radial-gradient(circle at bottom right, rgba(37, 99, 235, 0.15), transparent 25%),
+    linear-gradient(180deg, #091424 0%, #060d19 100%);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
