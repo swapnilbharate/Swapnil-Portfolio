@@ -1,4 +1,8 @@
 import automart from "../assets/images/Automart.png";
+import hirehub from "../assets/images/HireHub.png";
+import aapliRecipe from "../assets/images/AapliRecipe.png";
+import personalBook from "../assets/images/PersonalBookManager.png";
+import mahaSpend from "../assets/images/MahaSpend.png";
 import dashboardTemplate from "../assets/images/Dashbord Template.png";
 import quizApp from "../assets/images/Quiz Application.png";
 import simonSayGame from "../assets/images/simon Say game.png";
@@ -15,7 +19,7 @@ function Projects() {
       code: "https://github.com/swapnilbharate/AutoMart",
     },
     {
-      img: null,
+      img: hirehub,
       title: "HireHub – AI-Powered Job Portal",
       desc: "An AI-powered full-stack career platform built with Spring Boot, React.js, and Gemini AI, featuring Resume Analysis, AI Mock Interviews, Smart Job Recommendations, and Career Guidance.",
       tags: ["React", "Spring Boot", "Gemini AI", "PostgreSQL"],
@@ -23,7 +27,7 @@ function Projects() {
       code: "https://github.com/swapnilbharate/Hirehub",
     },
     {
-      img: null,
+      img: aapliRecipe,
       title: "AapliRecipe – Recipe Sharing Platform",
       desc: "A full-stack recipe sharing platform built with React, Node.js, Express, and MongoDB, featuring JWT authentication, recipe management, likes, bookmarks, personalized dashboards, and a modern responsive UI.",
       tags: ["React", "Node.js", "Express", "MongoDB", "JWT"],
@@ -31,7 +35,7 @@ function Projects() {
       code: "https://github.com/swapnilbharate/Recipe-Sharing-Platform",
     },
     {
-      img: null,
+      img: personalBook,
       title: "Personal Book Manager",
       desc: "A modern MERN Stack Personal Book Manager with secure JWT authentication, beautiful dashboard, and book tracking features. Manage your personal library with an elegant, responsive design.",
       tags: ["React", "Next.js", "MongoDB", "JWT", "MERN"],
@@ -39,7 +43,7 @@ function Projects() {
       code: "https://github.com/swapnilbharate/Personal-Book-Manager",
     },
     {
-      img: null,
+      img: mahaSpend,
       title: "MahaSpend – Expense Tracker",
       desc: "A modern, mobile-responsive expense tracker to manage your wealth and visualize your budget. Features interactive charts, category-wise tracking, dark mode, and detailed spending analytics.",
       tags: ["React", "Vite", "JavaScript", "CSS"],
