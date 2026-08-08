@@ -506,17 +506,23 @@ textarea {
 .project-image {
   position: relative;
   overflow: hidden;
+  background: #090d16;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-image img {
   width: 100%;
-  height: 260px;
-  object-fit: cover;
+  height: 240px;
+  object-fit: contain;
+  object-position: center;
   transition: transform 0.45s ease;
+  padding: 6px;
 }
 
 .project-card:hover .project-image img {
-  transform: scale(1.06);
+  transform: scale(1.04);
 }
 
 .project-image-placeholder {
@@ -960,6 +966,7 @@ textarea {
 
   .project-image img {
     height: 220px;
+    object-fit: contain;
     border-radius: 0;
   }
 
