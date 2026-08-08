@@ -1,5 +1,6 @@
 import profile from "../assets/images/Photo.png";
 import { useEffect, useRef } from "react";
+import { FaDownload, FaEnvelope, FaBriefcase, FaCode, FaGraduationCap, FaLayerGroup } from "react-icons/fa";
 
 function Home() {
   const typingRef = useRef(null);
@@ -49,8 +50,46 @@ function Home() {
               rel="noopener noreferrer"
               className="btn-box"
             >
-              Get Resume
+              <FaDownload style={{ marginRight: "0.6rem" }} /> Get Resume
             </a>
+            <a href="#contact" className="btn-box outline-btn">
+              <FaEnvelope style={{ marginRight: "0.6rem" }} /> Contact Me
+            </a>
+          </div>
+
+          {/* Quick Stat Counter Bar */}
+          <div className="hero-stats-bar">
+            <div className="hero-stat-item">
+              <div className="stat-icon"><FaBriefcase /></div>
+              <div>
+                <span className="stat-number">2+</span>
+                <span className="stat-label">Internships</span>
+              </div>
+            </div>
+            <div className="hero-stat-divider"></div>
+            <div className="hero-stat-item">
+              <div className="stat-icon"><FaCode /></div>
+              <div>
+                <span className="stat-number">9+</span>
+                <span className="stat-label">Projects</span>
+              </div>
+            </div>
+            <div className="hero-stat-divider"></div>
+            <div className="hero-stat-item">
+              <div className="stat-icon"><FaGraduationCap /></div>
+              <div>
+                <span className="stat-number">7.96</span>
+                <span className="stat-label">CGPA</span>
+              </div>
+            </div>
+            <div className="hero-stat-divider"></div>
+            <div className="hero-stat-item">
+              <div className="stat-icon"><FaLayerGroup /></div>
+              <div>
+                <span className="stat-number">Full Stack</span>
+                <span className="stat-label">Java & MERN</span>
+              </div>
+            </div>
           </div>
 
           <div className="social-links">
