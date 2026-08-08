@@ -40,7 +40,7 @@ function Home() {
           </h3>
 
           <p>
-            Passionate about building modern web applications using React, Java, Spring Boot, and SQL. I enjoy creating responsive user interfaces and solving real-world problems through innovative technology solutions.
+            Passionate about building modern web applications using React, JavaScript, Java, Spring Boot, and SQL. I enjoy creating responsive user interfaces and solving real-world problems through innovative technology solutions.
           </p>
 
           <div className="hero-actions">

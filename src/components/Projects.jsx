@@ -1,4 +1,3 @@
-import learnsphere from "../assets/images/LearnSphere.png";
 import automart from "../assets/images/Automart.png";
 import dashboardTemplate from "../assets/images/Dashbord Template.png";
 import quizApp from "../assets/images/Quiz Application.png";
@@ -8,24 +7,48 @@ import gamingTemplate from "../assets/images/Gaming temp.png";
 function Projects() {
   const projects = [
     {
-      img: learnsphere,
-      title: "LearnSphere: Adaptive Learning Platform",
-      desc: "A MERN stack web application delivering personalized learning content. Built dynamic dashboards with progress tracking, secure authentication, role-based access, and integrated an AI-powered context-aware chatbot (NLP + RAG).",
-      tags: ["React", "Node.js", "Express", "MongoDB", "NLP", "RAG"],
-      live: "https://learnsphere-ai-k1jv.onrender.com",
-      code: null,
-    },
-    {
       img: automart,
-      title: "AutoMart: Used Car Marketplace",
+      title: "AutoMart – Used Car Marketplace",
       desc: "A responsive car marketplace enabling users to search, filter, and explore second-hand cars. Features role-based Admin/User authentication, protected routing, wishlist integration, and specifications for listings.",
       tags: ["React", "Context API", "React Router", "Bootstrap", "CSS"],
-      live: null,
+      live: "https://automart-dryg.onrender.com",
       code: "https://github.com/swapnilbharate/AutoMart",
     },
     {
+      img: null,
+      title: "HireHub – AI-Powered Job Portal",
+      desc: "An AI-powered full-stack career platform built with Spring Boot, React.js, and Gemini AI, featuring Resume Analysis, AI Mock Interviews, Smart Job Recommendations, and Career Guidance.",
+      tags: ["React", "Spring Boot", "Gemini AI", "PostgreSQL"],
+      live: "https://hirehub-jobportal96.netlify.app",
+      code: "https://github.com/swapnilbharate/Hirehub",
+    },
+    {
+      img: null,
+      title: "AapliRecipe – Recipe Sharing Platform",
+      desc: "A full-stack recipe sharing platform built with React, Node.js, Express, and MongoDB, featuring JWT authentication, recipe management, likes, bookmarks, personalized dashboards, and a modern responsive UI.",
+      tags: ["React", "Node.js", "Express", "MongoDB", "JWT"],
+      live: "https://recipe-platform-frontend-u9bj.onrender.com",
+      code: "https://github.com/swapnilbharate/Recipe-Sharing-Platform",
+    },
+    {
+      img: null,
+      title: "Personal Book Manager",
+      desc: "A modern MERN Stack Personal Book Manager with secure JWT authentication, beautiful dashboard, and book tracking features. Manage your personal library with an elegant, responsive design.",
+      tags: ["React", "Next.js", "MongoDB", "JWT", "MERN"],
+      live: "https://personal-book-manager-eosin-phi.vercel.app",
+      code: "https://github.com/swapnilbharate/Personal-Book-Manager",
+    },
+    {
+      img: null,
+      title: "MahaSpend – Expense Tracker",
+      desc: "A modern, mobile-responsive expense tracker to manage your wealth and visualize your budget. Features interactive charts, category-wise tracking, dark mode, and detailed spending analytics.",
+      tags: ["React", "Vite", "JavaScript", "CSS"],
+      live: "https://smartexpensetracker-oajs.onrender.com",
+      code: "https://github.com/swapnilbharate/SmartExpenseTracker",
+    },
+    {
       img: dashboardTemplate,
-      title: "Business Analytics Dashboard",
+      title: "Business Hub – React Dashboard Template",
       desc: "A responsive dashboard featuring modular sidebar navigation, dynamic layout cards, and data visualization. Built with reusable and scalable components to render statistics, charts, and data tables.",
       tags: ["React", "JavaScript", "Recharts", "Bootstrap", "CSS"],
       live: "https://react-dashboardtemplate.netlify.app",
@@ -71,7 +94,13 @@ function Projects() {
           {projects.map((p, i) => (
             <div className="project-card" key={i}>
               <div className="project-image">
-                <img src={p.img} alt={p.title} />
+                {p.img ? (
+                  <img src={p.img} alt={p.title} />
+                ) : (
+                  <div className="project-image-placeholder">
+                    <span>{p.title.split("–")[0].trim()}</span>
+                  </div>
+                )}
               </div>
 
               <div className="project-content">
