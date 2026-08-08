@@ -7,22 +7,22 @@
    -------------------------------------------------------------------------- */
 @media (max-width: 1024px) {
   .container {
-    max-width: 90%;
+    max-width: 92%;
   }
 
   .about-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.8rem;
   }
 
   .skills-category-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.8rem;
   }
 
   .cert-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.8rem;
+    gap: 1.6rem;
   }
 }
 
@@ -34,13 +34,19 @@
     font-size: 58.5%;
   }
 
+  /* TIGHT SECTION SPACING FOR MOBILE */
   .section {
-    padding: 5rem 0;
+    padding: 2rem 0;
+  }
+
+  .section > .container {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   /* NAVBAR MOBILE */
   .navbar {
-    padding: 1.2rem 2rem;
+    padding: 1rem 1.6rem;
   }
 
   .hamburger {
@@ -57,7 +63,7 @@
     backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(139, 92, 246, 0.2);
     flex-direction: column;
-    padding: 1.5rem 0;
+    padding: 1.2rem 0;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
   }
 
@@ -72,20 +78,20 @@
 
   .nav-list a {
     display: block;
-    padding: 1.2rem 2rem;
+    padding: 1.1rem 2rem;
     font-size: 1.6rem;
   }
 
-  /* HERO SECTION */
+  /* HERO SECTION - TIGHT TOP SPACING & BIGGER PROFILE PHOTO */
   .home {
-    padding-top: 8rem;
+    padding-top: 1.5rem !important;
     text-align: center;
   }
 
   .home-inner {
     grid-template-columns: 1fr;
     justify-items: center;
-    gap: 2.5rem;
+    gap: 1.8rem;
   }
 
   .home-content {
@@ -94,29 +100,34 @@
   }
 
   .home-content h1 {
-    font-size: 4rem;
-    line-height: 1.2;
+    font-size: 3.8rem;
+    line-height: 1.18;
   }
 
   .home-content h3 {
     justify-content: center;
-    font-size: 2rem;
+    font-size: 1.9rem;
+    margin-bottom: 1.2rem;
   }
 
   .hero-eyebrow {
-    font-size: 1.4rem;
+    font-size: 1.35rem;
     display: inline-block;
+    margin-bottom: 0.4rem;
   }
 
+  /* INCREASED PROFILE PHOTO SIZE ON MOBILE */
   .profile-pic {
-    width: min(100%, 200px);
+    width: min(100%, 280px) !important;
     margin: 0 auto;
+    border-width: 5px;
   }
 
   .hero-actions {
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1.2rem;
+    gap: 1rem;
+    margin-bottom: 1.8rem;
   }
 
   .hero-actions .btn-box {
@@ -132,11 +143,11 @@
   .hero-stats-bar {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    gap: 1.2rem;
     width: 100%;
     max-width: 480px;
-    margin: 2.5rem auto 0 auto;
-    padding: 1.6rem;
+    margin: 1.8rem auto 0 auto;
+    padding: 1.4rem;
   }
 
   .hero-stat-divider {
@@ -148,9 +159,13 @@
   }
 
   /* SKILLS MOBILE */
+  .skills-category-grid {
+    margin-top: 1.8rem;
+  }
+
   .skill-item-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 0.8rem;
   }
 
   .skill-pill-cell {
@@ -164,37 +179,38 @@
   /* PROJECTS MOBILE */
   .projects-filter-bar {
     gap: 0.8rem;
+    margin-bottom: 2.2rem;
   }
 
   .filter-btn {
-    padding: 0.7rem 1.4rem;
+    padding: 0.65rem 1.3rem;
     font-size: 1.25rem;
   }
 
   .projects-grid {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 2rem;
   }
 
   .project-image img {
-    height: 210px;
+    height: 200px;
   }
 
   /* CONTACT MOBILE */
   .contact {
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
   }
 
   .contact-text,
   .contact-form {
     width: 100%;
-    padding: 2.2rem;
+    padding: 1.8rem;
   }
 
   .contact-list li {
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 0.8rem;
   }
 
   .copy-btn {
@@ -203,8 +219,8 @@
 
   /* FLOATING BACK TO TOP */
   .back-to-top-btn {
-    bottom: 2rem;
-    right: 2rem;
+    bottom: 1.8rem;
+    right: 1.8rem;
     width: 4.2rem;
     height: 4.2rem;
     font-size: 1.6rem;
@@ -220,39 +236,42 @@
   }
 
   .section-title {
-    font-size: 3.4rem;
+    font-size: 3.2rem;
+    margin-bottom: 0.6rem;
   }
 
   .section-subtitle {
-    font-size: 1.35rem;
+    font-size: 1.3rem;
   }
 
+  /* INCREASED PROFILE PHOTO SIZE FOR STANDARD PHONES */
   .profile-pic {
-    width: min(100%, 170px);
+    width: min(100%, 250px) !important;
   }
 
   .home-content h1 {
-    font-size: 3.4rem;
+    font-size: 3.3rem;
   }
 
   .home-content h3 {
-    font-size: 1.75rem;
+    font-size: 1.7rem;
   }
 
   .home-content p {
-    font-size: 1.4rem;
-    line-height: 1.6;
+    font-size: 1.38rem;
+    line-height: 1.55;
+    margin-bottom: 1.8rem;
   }
 
   /* HERO STATS BAR 2-COLUMNS */
   .hero-stats-bar {
     grid-template-columns: repeat(2, 1fr);
     padding: 1.2rem;
-    gap: 1.2rem;
+    gap: 1rem;
   }
 
   .stat-number {
-    font-size: 1.6rem;
+    font-size: 1.55rem;
   }
 
   .stat-label {
@@ -262,81 +281,81 @@
   .stat-icon {
     width: 3.2rem;
     height: 3.2rem;
-    font-size: 1.5rem;
+    font-size: 1.45rem;
   }
 
   /* ABOUT CARDS MOBILE */
   .about-card {
-    padding: 2rem 1.6rem;
+    padding: 1.8rem 1.4rem;
   }
 
   .about-card-title {
-    font-size: 1.8rem;
+    font-size: 1.75rem;
   }
 
   /* SKILLS PILLS MOBILE (2 Columns) */
   .skills-category-card {
-    padding: 1.8rem 1.4rem;
+    padding: 1.6rem 1.2rem;
   }
 
   .skills-cat-header h3 {
-    font-size: 1.7rem;
+    font-size: 1.65rem;
   }
 
   .skill-item-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.8rem;
+    gap: 0.7rem;
   }
 
   .skill-pill-cell {
-    padding: 0.7rem 0.8rem;
+    padding: 0.65rem 0.75rem;
   }
 
   .skill-pill-cell span {
     font-size: 1.18rem;
   }
 
-  /* CERTIFICATES MOBILE (1 Column for clean view) */
+  /* CERTIFICATES MOBILE */
   .cert-grid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1.4rem;
   }
 
   .cert-card {
-    padding: 2rem 1.6rem;
+    padding: 1.8rem 1.4rem;
   }
 
   .cert-title {
-    font-size: 1.55rem;
+    font-size: 1.5rem;
   }
 
   /* CERT MODAL MOBILE */
   .cert-modal-content {
-    max-width: 95%;
+    max-width: 96%;
     border-radius: 1.4rem;
   }
 
   .cert-modal-header {
-    padding: 1.4rem 1.6rem;
+    padding: 1.2rem 1.4rem;
   }
 
   .cert-modal-header h3 {
-    font-size: 1.5rem;
+    font-size: 1.45rem;
   }
 
   .cert-modal-body iframe {
-    height: 380px !important;
+    height: 360px !important;
   }
 
   /* CONTACT FORM MOBILE */
   .contact-text h1 {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
 
   .contact-list li {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.6rem;
+    gap: 0.5rem;
   }
 
   .copy-btn {
@@ -358,16 +377,17 @@
   }
 
   .home-content h1 {
-    font-size: 3rem;
+    font-size: 2.9rem;
   }
 
+  /* INCREASED PROFILE PHOTO SIZE FOR SMALL PHONES */
   .profile-pic {
-    width: min(100%, 150px);
+    width: min(100%, 220px) !important;
   }
 
   .hero-stats-bar {
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 0.8rem;
   }
 
   .skill-item-grid {

@@ -275,18 +275,20 @@ textarea {
   height: 4.4rem;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  border-radius: 1.2rem;
-  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 50%;
   background: rgba(255, 255, 255, 0.05);
-  color: var(--text);
-  font-size: 1.8rem;
-  transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--text-soft);
+  transition: transform 0.3s ease, border-color 0.3s ease, color 0.3s ease, background 0.3s ease;
 }
 
 .social-btns:hover {
-  transform: translateY(-2px);
-  background: rgba(139, 92, 246, 0.14);
+  transform: translateY(-3px);
+  background: rgba(139, 92, 246, 0.15);
   border-color: rgba(139, 92, 246, 0.35);
   color: var(--accent);
 }
@@ -300,13 +302,13 @@ textarea {
 }
 
 .profile-pic {
-  width: min(100%, 400px);
+  width: min(100%, 420px);
   aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: center 20%;
   border-radius: 50%;
   border: 6px solid var(--accent);
-  box-shadow: 0 0 30px var(--accent), 0 0 60px rgba(139, 92, 246, 0.25);
+  box-shadow: 0 0 35px var(--accent), 0 0 70px rgba(139, 92, 246, 0.3);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
