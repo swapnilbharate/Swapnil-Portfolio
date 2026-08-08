@@ -23,6 +23,95 @@
   scroll-behavior: smooth;
 }
 
+/* ==========================================================================
+   LIGHT MODE & THEMES SYSTEM
+   ========================================================================== */
+
+[data-mode="light"] {
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --surface-strong: #f1f5f9;
+  --border: rgba(148, 163, 184, 0.25);
+  --text: #0f172a;
+  --text-soft: #334155;
+  --text-muted: #64748b;
+  --accent: #059669;
+  --accent-strong: #d97706;
+  --shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+[data-mode="light"] body {
+  background: radial-gradient(circle at top left, rgba(16, 185, 129, 0.08), transparent 22%),
+    radial-gradient(circle at bottom right, rgba(245, 158, 11, 0.08), transparent 25%),
+    linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%) !important;
+  color: #0f172a !important;
+}
+
+[data-mode="light"] .navbar {
+  background: rgba(255, 255, 255, 0.92);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+[data-mode="light"] .navbar a {
+  color: #334155;
+}
+
+[data-mode="light"] .hero-stats-bar,
+[data-mode="light"] .about-card,
+[data-mode="light"] .skills-category-card,
+[data-mode="light"] .project-card,
+[data-mode="light"] .cert-card,
+[data-mode="light"] .contact-text,
+[data-mode="light"] .contact-form {
+  background: #ffffff !important;
+  border-color: rgba(148, 163, 184, 0.25) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06) !important;
+}
+
+[data-mode="light"] .skill-pill-cell {
+  background: #f1f5f9 !important;
+  border-color: rgba(148, 163, 184, 0.25) !important;
+}
+
+[data-mode="light"] .contact-form input,
+[data-mode="light"] .contact-form textarea {
+  background: #f8fafc !important;
+  color: #0f172a !important;
+  border-color: rgba(148, 163, 184, 0.3) !important;
+}
+
+[data-mode="light"][data-theme="cyan"] {
+  --bg: #f0f9ff;
+  --surface: #ffffff;
+  --border: rgba(2, 132, 199, 0.25);
+  --text: #0f172a;
+  --text-soft: #334155;
+  --accent: #0284c7;
+  --accent-strong: #2563eb;
+}
+
+[data-mode="light"][data-theme="cyan"] body {
+  background: radial-gradient(circle at top left, rgba(6, 182, 212, 0.1), transparent 22%),
+    radial-gradient(circle at bottom right, rgba(37, 99, 235, 0.08), transparent 25%),
+    linear-gradient(180deg, #f0f9ff 0%, #e0f2fe 100%) !important;
+}
+
+[data-mode="light"][data-theme="violet"] {
+  --bg: #faf5ff;
+  --surface: #ffffff;
+  --border: rgba(124, 58, 237, 0.25);
+  --text: #0f172a;
+  --text-soft: #334155;
+  --accent: #7c3aed;
+  --accent-strong: #c084fc;
+}
+
+[data-mode="light"][data-theme="violet"] body {
+  background: radial-gradient(circle at top left, rgba(139, 92, 246, 0.1), transparent 22%),
+    radial-gradient(circle at bottom right, rgba(236, 72, 153, 0.08), transparent 25%),
+    linear-gradient(180deg, #faf5ff 0%, #f3e8ff 100%) !important;
+}
+
 /* OPTION 2: Royal Sapphire & Electric Cyan Theme */
 [data-theme="cyan"] {
   --bg: #060d19;
@@ -193,7 +282,15 @@ textarea {
   color: transparent;
 }
 
-/* LIVE THEME SWITCHER BAR */
+/* NAV CONTROLS & LIGHT/DARK MODE TOGGLE */
+.nav-controls-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-left: auto;
+  margin-right: 1.5rem;
+}
+
 .theme-switcher-bar {
   display: flex;
   align-items: center;
@@ -202,8 +299,34 @@ textarea {
   border: 1px solid rgba(148, 163, 184, 0.15);
   padding: 0.5rem 1rem;
   border-radius: 999px;
-  margin-left: auto;
-  margin-right: 1.5rem;
+}
+
+.mode-toggle-btn {
+  width: 3.8rem;
+  height: 3.8rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.mode-toggle-btn:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.mode-icon.sun {
+  color: #f59e0b;
+  font-size: 1.8rem;
+}
+
+.mode-icon.moon {
+  color: #8b5cf6;
+  font-size: 1.6rem;
 }
 
 .theme-icon {
